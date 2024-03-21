@@ -1,0 +1,14 @@
+docker build . 
+
+docker run `name` 
+docker run -p 8088:8080 `name` - run with ur connection
+
+docker logs `name` - just a logs
+docker logs -f `name` - logs in real time
+docker logs --tail 100 `name` - last 100 logs of container
+
+docker stop/rm
+
+docker pull `name` - download a copy of container
+
+docker run -p 8088:8080 --name postgres -v ./volume/postgres/data:/var/lib/postgresql/data - volumes 
